@@ -79,8 +79,8 @@ void setup() {
   SPI.begin();
   SPI.setDataMode(SPI_MODE3);
   SPI.setBitOrder(MSBFIRST);
-  SPI.setClockDivider(SPI_CLOCK_DIV128);
-  //SPI.setClockDivider(4);
+  //SPI.setClockDivider(SPI_CLOCK_DIV128);
+  SPI.setClockDivider(4);
 
   Mouse.begin(); // For mouse control
 
@@ -191,18 +191,22 @@ void performStartup(void){
   }
 
 void UpdatePointer(void){
-  if(initComplete==9){
-
-    //write 0x01 to Motion register and read from it to freeze the motion values and make them available
+  if(initComplete == 9){
+    // Freeze motion values by writing to the Motion register
     adns_write_reg(Motion, 0x01);
     adns_read_reg(Motion);
 
-    xydat[0] = (int)adns_read_reg(Delta_X_L);
-    xydat[1] = (int)adns_read_reg(Delta_Y_L);
-    
-    movementflag=1;
-    }
+    // Read both the low and high bytes for X and Y
+    uint8_t dx_low = adns_read_reg(Delta_X_L);
+    uint8_t dy_low = adns_read_reg(Delta_Y_L);
+
+    // Save the combined delta values
+    xydat[0] = dx_low;
+    xydat[1] = dy_low;
+
+    movementflag = 1;
   }
+}
 
 void dispRegisters(void){
   int oreg[7] = {
