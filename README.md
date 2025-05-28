@@ -58,7 +58,7 @@ Sally has bilateral epicondylitis, a condition that weakens grip strength, impac
 2. Assemble base unit by inserting hinge pin into slots
 3. Install buttons and rotary encoder on breadboards
 4. Connect all components according to wiring diagram
-5. Upload Arduino code to both units
+5. Upload Arduino code
 6. Connect via USB and test functionality
 
 For detailed assembly instructions, see [Assembly_Instructions.pdf](./Assembly_Instructions.pdf)
