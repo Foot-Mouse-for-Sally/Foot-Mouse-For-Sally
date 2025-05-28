@@ -7,7 +7,7 @@ The device consists of two main components:
 1. **Base Unit** - Handles mouse clicks and scrolling functionality
 2. **Foot Mouse** - Controls cursor movement via foot motion
 
-![Footime Replacement](./device-photo.jpg)
+![Footime Replacement](./foot_mouse.png)
 
 ## Project Background
 Sally has bilateral epicondylitis, a condition that weakens grip strength, impacts fine motor skills, and causes radiating pain. This project was developed by the EMPOWER Student Association to create an accessible mouse alternative that doesn't require hand movement.
