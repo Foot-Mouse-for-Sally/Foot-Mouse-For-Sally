@@ -61,7 +61,7 @@ Sally has bilateral epicondylitis, a condition that weakens grip strength, impac
 5. Upload Arduino code
 6. Connect via USB and test functionality
 
-For detailed assembly instructions, see [Assembly_Instructions.pdf](./Assembly_Instructions.pdf)
+For detailed assembly instructions, see [Assembly_Instructions.pdf](./Assembly Instructions.pdf)
 
 ## Software
 
