@@ -7,7 +7,7 @@ The device consists of two main components:
 1. **Base Unit** - Handles mouse clicks and scrolling functionality
 2. **Foot Mouse** - Controls cursor movement via foot motion
 
-![Footime Replacement](https://github.com/user/hands-free-mouse/raw/main/images/device-photo.jpg)
+![Footime Replacement](./device-photo.jpg)
 
 ## Project Background
 Sally has bilateral epicondylitis, a condition that weakens grip strength, impacts fine motor skills, and causes radiating pain. This project was developed by the EMPOWER Student Association to create an accessible mouse alternative that doesn't require hand movement.
@@ -61,7 +61,7 @@ Sally has bilateral epicondylitis, a condition that weakens grip strength, impac
 5. Upload Arduino code to both units
 6. Connect via USB and test functionality
 
-For detailed assembly instructions, see [Assembly_Instructions.md](./Assembly_Instructions.md)
+For detailed assembly instructions, see [Assembly_Instructions.md](./Assembly_Instructions.pdf)
 
 ## Software
 
